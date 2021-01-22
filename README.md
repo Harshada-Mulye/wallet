@@ -10,7 +10,7 @@ Forka det här repot och ladda upp din källkod till det forkade repot.
 Applikationen ska ha två stycken vyer, en vy för alla ens kort, och en vy för att skapa ett nytt kort. Härma mocken så gott du kan!
 I PDF:en hittar du också ett förslag på vilka komponenter som bör finnas med, det är rekommenderat att följa den.
 
-Använd Vue Router för att konfigurera era vyer
+Använd Vue Router för att konfigurera era vyer...
 
 // Placera arrayen med alla kort i root-komponenten på samma sätt som Mini Library.
 
