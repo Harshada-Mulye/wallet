@@ -4,6 +4,7 @@
       <Top :title="title"/>
     </header>
     <main>
+      
            <article class="active-card">
         <h6>ACTIVE CARD</h6>
         <div class="the-card">
@@ -51,8 +52,14 @@ export default {
          this.position = index;
        console.log("hi");
      
+  },
+  created:function()
+  
+  {
+    console.log(this.$root.$data.cards)
   }
   },
+  
   components: {
     Top,
     Card,
