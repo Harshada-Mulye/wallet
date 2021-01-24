@@ -116,7 +116,20 @@ changeColor(){
 },
 send()
 {
-
+    if (
+        this.$refs.form.cardNumber.value.length == 0 ||
+        this.$refs.form.cardholderName.value.length == 0 ||
+        this.$refs.form.validYear.length == 0 ||
+        this.$refs.form.validMonth.length == 0
+      ) {
+        alert("Please fill all input");
+        this.DefaultCard.number = "XXXX XXXX XXXX XXXX";
+        this.DefaultCard.holder = "firstname lastname";
+        this.DefaultCard.vendor = "bitcoin";
+        this.DefaultCard.bgColor = "#D8D8D8";
+        this.DefaultCard.validMonth = "MM";
+        this.DefaultCard.validYear = "YY";
+      }
       this.$root.$data.cards.push(this.DefaultCard)
 }
 }
