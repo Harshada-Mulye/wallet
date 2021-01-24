@@ -49,15 +49,18 @@ export default {
   },
   methods:{
      actived(index) {
+       console.log(index);
          this.position = index;
        console.log("hi");
      
+  },
+  
   },
   created:function()
   
   {
     console.log(this.$root.$data.cards)
-  }
+    console.log('hi')
   },
   
   components: {

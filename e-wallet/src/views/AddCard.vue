@@ -57,7 +57,7 @@
             </div>
            </div>
         
-            <select name="vendor" v-model="DefaultCard.vendor">
+            <select name="vendor" v-model="DefaultCard.vendor" @change="changeColor">
             <option value="bitcoin">Bitcoin</option>
             <option value="ninja">Ninja</option>
             <option value="blockchain">Blockchain</option>
@@ -95,7 +95,7 @@ data()
   }
 },
 methods:{
-send(){
+changeColor(){
   if (this.$refs.form.vendor.value == "bitcoin") {
         this.DefaultCard.bgColor = "#F9B449";
         this.DefaultCard.textColor = "#2c3e50";
@@ -113,6 +113,11 @@ send(){
         this.DefaultCard.textColor = "#ECE6DF";
       }
  
+},
+send()
+{
+
+      this.$root.$data.cards.push(this.DefaultCard)
 }
 }
 }
