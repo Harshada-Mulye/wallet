@@ -18,7 +18,7 @@
           :key="index"
           :card="Cards[index]"
           @actived="actived(index)"
-          
+          class="cardStack"
          
         />
       </article>
@@ -85,6 +85,13 @@ export default {
     .active-card {
       h6 {
         margin: 0 0 5px 0;
+      }
+    }
+     .card-stack {
+      margin-top: 200px;
+      margin-bottom: 50px;
+        .cardStack {
+        margin-top: -160px;
       }
     }
     
