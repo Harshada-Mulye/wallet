@@ -11,6 +11,7 @@
           <Card :card="Cards[this.position]" />
         </div>
       </article>
+      <section class="conatiner2">
       <article class="card-stack">
         <CardStack
           v-for="(card, index) in Cards"
@@ -21,7 +22,7 @@
          
         />
       </article>
-   
+   </section>
       <div class="btn">
         <router-link to="AddCard" class="add-card-btn">
           add a new card
@@ -78,6 +79,7 @@ export default {
 <style lang="scss" scoped>
 .container {
   main {
+    
     max-width: 375px;
     margin: auto;
     .active-card {
@@ -89,6 +91,8 @@ export default {
   .the-card{
     margin-bottom: 50px;
   }
+ 
+
   .btn {
       display: flex;
       width: 350px;

@@ -29,7 +29,7 @@
             <div class="valid-part">
               <label for="validMonth" class="valid-label">Valid</label>
               <div class="valid-input">
-                  <select name="Month" v-model="DefaultCard.validMonth">
+                  <select name="validMonth" v-model="DefaultCard.validMonth">
             <option >1</option>
             <option >2</option>
             <option >3</option>
@@ -44,7 +44,7 @@
             <option >12</option>
 
           </select>
-           <select name="Month" v-model="DefaultCard.validYear">
+           <select name="validYear" v-model="DefaultCard.validYear">
             <option >21</option>
             <option >22</option>
             <option >23</option>

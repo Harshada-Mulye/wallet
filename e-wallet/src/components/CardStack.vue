@@ -1,4 +1,5 @@
 <template>
+<section class="container">
   <section class="card" :style="{ backgroundColor: card.bgColor }" @click="$emit('actived')">
        <div class="top-card">
       <img src="../assets/chip-light.svg" alt="chip" class="chip-card" />
@@ -31,7 +32,8 @@
           </h4>
         </div>
       </div>
-  </section>  
+  </section> 
+</section> 
 </template>
 <script>
 export default {
@@ -41,12 +43,16 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-section.card{
-  padding:15px;
+.container{
+ 
+
+    .card{
+ 
+   margin:auto;
   cursor:pointer;
    max-width: 310px;
   height: 247px;
-   margin: auto;
+  
   
    background-color: rgb(216, 216, 216);
     .top-card {
@@ -98,5 +104,5 @@ section.card{
   }
 
 
-
+}
 </style>
