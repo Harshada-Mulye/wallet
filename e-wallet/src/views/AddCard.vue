@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+     <router-link to="/" class="back"
+      >
+    /></router-link>
      <header>
       <Top :title="FormTitle" />
     </header>
@@ -130,11 +133,105 @@ send()
         this.DefaultCard.validMonth = "MM";
         this.DefaultCard.validYear = "YY";
       }
+      this.DefaultCard.cardNumber=<the-mask  mask="#### #### #### ####"/>
       this.$root.$data.cards.push(this.DefaultCard)
+      this.$router.push("/");
 }
 }
 }
 </script>
 <style lang="scss" scoped>
-
+.container {
+  header {
+    max-width: 220px;
+    margin: auto;
+  }
+   main {
+    max-width: 375px;
+    margin: auto;
+    .add-card-form {
+      form {
+        max-width: 352px;
+        margin: 50px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        label {
+          text-transform: uppercase;
+          font-size: 0.7rem;
+          text-align: left;
+          margin: 4px 0;
+        }
+        input {
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 4px;
+          border: 1px solid #000;
+        }
+        .for-valid-cvc {
+          display: flex;
+          justify-content: space-between;
+        }
+        .valid-cvc {
+          @extend .for-valid-cvc;
+          .valid-part {
+            width: 49%;
+            text-align: left;
+            .valid-input {
+              @extend .for-valid-cvc;
+              input {
+                width: 35%;
+              }
+            }
+          }
+          .cvc-part {
+            text-align: left;
+            width: 49%;
+          }
+        }
+        select {
+          border-radius: 4px;
+          padding: 10px;
+        }
+        button {
+          background-color: #000;
+          color: #fff;
+          font-weight: bold;
+          border-radius: 6px;
+          margin-top: 20px;
+          padding: 15px;
+          border: 1px solid #000;
+        }
+        button:hover {
+          cursor: pointer;
+          transition: 200ms;
+          background-color: #fff;
+          color: black;
+          border: 1px solid #000;
+        }
+      }
+    }
+    .preview-btn {
+      width: 352px;
+      background-color: #000;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #000;
+    }
+    .preview-btn:hover {
+      cursor: pointer;
+      transition: 200ms;
+      background-color: #fff;
+      color: black;
+      border: 1px solid #000;
+    }
+  }
+  .back {
+    float: left;
+    font-size: 2rem;
+    color: black;
+  }
+}
 </style>
