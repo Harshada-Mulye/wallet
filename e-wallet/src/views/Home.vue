@@ -92,7 +92,7 @@ export default {
       margin-top: 200px;
       margin-bottom: 50px;
         .cardStack {
-        margin-top: -160px;
+        margin-top: -170px;
       }
     }
     

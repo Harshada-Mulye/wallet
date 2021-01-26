@@ -47,15 +47,16 @@ export default {
  
 
     .card{
- 
+    box-shadow: 5px 10px #888888;
    margin:auto;
   cursor:pointer;
-   max-width: 310px;
+   max-width: 340px;
   height: 247px;
-  
+  position: relative;
   
    background-color: rgb(216, 216, 216);
     .top-card {
+      padding:10px;
     display: flex;
     justify-content: space-between;
     .chip-card {
@@ -69,6 +70,13 @@ export default {
   }
   .middle-card {
     text-align: center;
+    position: absolute;
+    
+   h2{
+     text-align: center;
+      font-size: 1.2rem;
+     
+   }
   }
   .bottom-card{
     display: flex;

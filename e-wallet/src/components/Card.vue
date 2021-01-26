@@ -39,7 +39,11 @@ export default {
         card:Object
     },
     
-    };
+      };
+   
+    
+    
+  
 
 </script>
 <style lang="scss" scoped>
@@ -49,7 +53,7 @@ section.card{
    max-width: 310px;
   height: 247px;
    margin: auto;
-  
+   box-shadow: 5px 10px #888888;
    background-color: rgb(216, 216, 216);
     .top-card {
     display: flex;

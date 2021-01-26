@@ -29,9 +29,12 @@
              v-model="DefaultCard.holder"
             />
             <div class="valid-cvc">
-            <div class="valid-part">
-              <label for="validMonth" class="valid-label">Valid</label>
-              <div class="valid-input">
+           
+              
+              <div class="valid-month">
+                <label for="validMonth" class="valid-label">Month</label>
+                </div>
+                <div>
                   <select name="validMonth" v-model="DefaultCard.validMonth">
             <option >1</option>
             <option >2</option>
@@ -47,6 +50,11 @@
             <option >12</option>
 
           </select>
+          </div>
+          <div class="validYear">
+           <label for="validMonth" class="valid-label">Year</label>
+           </div>
+           <div>
            <select name="validYear" v-model="DefaultCard.validYear">
             <option >21</option>
             <option >22</option>
@@ -58,7 +66,7 @@
           
               </div>
             </div>
-           </div>
+           
         
             <select name="vendor" v-model="DefaultCard.vendor" @change="changeColor">
             <option value="bitcoin">Bitcoin</option>
@@ -167,22 +175,11 @@ send()
           border-radius: 4px;
           border: 1px solid #000;
         }
-        .for-valid-cvc {
+        .valid-cvc {
           display: flex;
           justify-content: space-between;
         }
-        .valid-cvc {
-          @extend .for-valid-cvc;
-          .valid-part {
-            width: 49%;
-            text-align: left;
-            .valid-input {
-              @extend .for-valid-cvc;
-              input {
-                width: 35%;
-              }
-            }
-          }
+        
           .cvc-part {
             text-align: left;
             width: 49%;
@@ -210,28 +207,12 @@ send()
         }
       }
     }
-    .preview-btn {
-      width: 352px;
-      background-color: #000;
-      color: #fff;
-      font-weight: bold;
-      border-radius: 6px;
-      margin-top: 20px;
-      padding: 15px;
-      border: 1px solid #000;
-    }
-    .preview-btn:hover {
-      cursor: pointer;
-      transition: 200ms;
-      background-color: #fff;
-      color: black;
-      border: 1px solid #000;
-    }
+    
   }
   .back {
     float: left;
     font-size: 2rem;
     color: black;
   }
-}
+
 </style>
