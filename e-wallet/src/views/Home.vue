@@ -13,7 +13,8 @@
       </article>
       <section class="conatiner2">
       <article class="card-stack">
-        <CardStack
+     
+                  <CardStack
           v-for="(card, index) in Cards"
           :key="index"
           :card="Cards[index]"
@@ -33,7 +34,7 @@
 </template>
 
 <script>
-// @ is an alias to /src
+
 
 import Top from "../components/Top";
 import Card from "../components/Card";

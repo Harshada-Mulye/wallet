@@ -133,7 +133,7 @@ send()
         this.DefaultCard.validMonth = "MM";
         this.DefaultCard.validYear = "YY";
       }
-      this.DefaultCard.cardNumber=<the-mask  mask="#### #### #### ####"/>
+     
       this.$root.$data.cards.push(this.DefaultCard)
       this.$router.push("/");
 }

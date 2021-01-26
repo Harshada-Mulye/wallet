@@ -38,7 +38,9 @@ export default {
     props:{
         card:Object
     },
-}
+    
+    };
+
 </script>
 <style lang="scss" scoped>
 section.card{
