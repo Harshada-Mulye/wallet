@@ -2,7 +2,7 @@
   <div class="container">
      <router-link to="/" class="back"
       >
-    /></router-link>
+    </router-link>
      <header>
       <Top :title="FormTitle" />
     </header>
