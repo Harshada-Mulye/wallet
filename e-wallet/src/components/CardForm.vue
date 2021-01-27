@@ -3,11 +3,8 @@
      <router-link to="/" class="back"
       >
     </router-link>
-     <header>
-      <Top :title="FormTitle" />
-    </header>
+     
     <main>
-      
       <section class="default-card">
       <card :card="DefaultCard"/>
         </section>
@@ -83,12 +80,11 @@
   </div>
 </template>
 <script>
-import Top from "../components/Top";
-import Card from "../components/Card";
 
+import Card from "./Card";
 export default {
   components: {
-   Top,Card
+   Card
 },
 data()
 {
