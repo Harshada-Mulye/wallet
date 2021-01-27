@@ -111,18 +111,22 @@ methods:{
 changeColor(){
   if (this.$refs.form.vendor.value == "bitcoin") {
         this.DefaultCard.bgColor = "#F9B449";
+        this.DefaultCard.img="bitcoin";
         this.DefaultCard.textColor = "#2c3e50";
       }
       if (this.$refs.form.vendor.value == "evil") {
         this.DefaultCard.bgColor = "#DF2E4C";
+        this.DefaultCard.img="evil";
         this.DefaultCard.textColor = "#ECE6DF";
       }
       if (this.$refs.form.vendor.value == "blockchain") {
         this.DefaultCard.bgColor = "#8050E5";
+        this.DefaultCard.img="blockchain";
         this.DefaultCard.textColor = "#ECE6DF";
       }
       if (this.$refs.form.vendor.value == "ninja") {
         this.DefaultCard.bgColor = "#3A3A3A";
+        this.DefaultCard.img="ninja";
         this.DefaultCard.textColor = "#ECE6DF";
       }
  

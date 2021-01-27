@@ -1,5 +1,6 @@
 <template>
   <section class="card" :style="{ backgroundColor: card.bgColor }" @click="$emit('actived')">
+  
        <div class="top-card">
       <img src="../assets/chip-light.svg" alt="chip" class="chip-card" />
       <img
@@ -9,7 +10,7 @@
       />
        </div>
         <div class="middle-card">
-      <h2 :style="{ color: card.textColor }">{{ card.number }}</h2>
+      <h2 :style="{ color: card.textColor }">{{ formatNumber}}</h2>
     </div>
     <div class="bottom-card">
       <div class="cardholder-name">
@@ -38,8 +39,27 @@ export default {
     props:{
         card:Object
     },
+    computed:{
+     formatNumber() {
+      let formattedNum = ""
+      if (this.card.number) {
+for (let i = 0; i < this.card.number.length; i++) {
+        if (i % 4 === 0) {
+          formattedNum = formattedNum + " " + this.card.number[i]
+        }
+        else {
+          formattedNum += this.card.number[i]
+        }
+      }
+      }
+      
+      return formattedNum
+    }
+  }
+  
+    };
     
-      };
+     
    
     
     
@@ -83,7 +103,7 @@ section.card{
       h4 {
         margin: auto;
          font-family: 'Courier New', Courier, monospace;
-         font-size: 20px;
+         font-size: 18px;
       }
       
     }

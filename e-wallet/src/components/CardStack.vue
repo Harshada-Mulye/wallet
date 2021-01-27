@@ -10,7 +10,7 @@
       />
        </div>
         <div class="middle-card">
-      <h2 :style="{ color: card.textColor }">{{ card.number }}</h2>
+      <h2 :style="{ color: card.textColor }">{{ formatNumber }}</h2>
     </div>
     <div class="bottom-card">
       <div class="cardholder-name">
@@ -40,6 +40,23 @@ export default {
     props:{
         card:Object
     },
+     computed:{
+     formatNumber() {
+      let formattedNum = ""
+      if (this.card.number) {
+for (let i = 0; i < this.card.number.length; i++) {
+        if (i % 4 === 0) {
+          formattedNum = formattedNum + " " + this.card.number[i]
+        }
+        else {
+          formattedNum += this.card.number[i]
+        }
+      }
+      }
+      
+      return formattedNum
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
