@@ -1,18 +1,18 @@
 <template>
     <div class="title">
-        <h1>{{title}}</h1>
+        <h2>{{header}}</h2>
     </div>
 </template>
 <script>
 export default {
     props:{
-        title:String,
+        header:String,
     }
 }
 </script>
 <style lang="scss" scoped>
 .title{
-    h1{
+    h2{
         text-transform: uppercase;
     }
 }

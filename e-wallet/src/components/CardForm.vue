@@ -6,7 +6,7 @@
     
     <main>
       
-      <section class="default-card">
+      <section>
          
       <Card :card="DefaultCard"/>
         </section>
@@ -199,13 +199,13 @@ addForm()
           color: #fff;
           font-weight: bold;
           border-radius: 6px;
-          margin-top: 20px;
+          margin-top: 22px;
           padding: 15px;
           border: 1px solid #000;
         }
         button:hover {
           cursor: pointer;
-          transition: 200ms;
+          transition: 220ms;
           background-color: #fff;
           color: black;
           border: 1px solid #000;

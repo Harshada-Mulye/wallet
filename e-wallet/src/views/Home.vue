@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <header>
-      <Top :title="title"/>
+      <Top :header="header"/>
     </header>
     <main>
       
@@ -26,7 +26,7 @@
    </section>
       <div class="btn">
         <router-link to="AddCard" class="add-card-btn">
-          add a new card
+          add a card
         </router-link>
       </div>
     </main>
@@ -44,7 +44,7 @@ export default {
 
   data() {
     return {
-      title: "e-wallet",
+      header: "e-wallet",
       position:0
      
     }

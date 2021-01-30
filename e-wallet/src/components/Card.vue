@@ -1,7 +1,7 @@
 <template>
   <section class="card" :style="{ backgroundColor: card.bgColor }" @click="$emit('actived')">
   
-       <div class="top-card">
+       <div class="start-card">
       <img src="../assets/chip-light.svg" alt="chip" class="chip-card" />
       <img
         v-bind:src="require('../assets/vendor-' + card.img + '.svg')"
@@ -75,7 +75,7 @@ section.card{
    margin: auto;
    box-shadow: 5px 10px #888888;
    background-color: rgb(216, 216, 216);
-    .top-card {
+    .start-card {
     display: flex;
     justify-content: space-between;
     .chip-card {

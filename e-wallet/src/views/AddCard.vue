@@ -2,7 +2,7 @@
   <div class="container">
     
      <header>
-      <Top :title="FormTitle" />
+      <Top :header="FormTitle" />
     </header>
     <main>
       <CardForm/>
