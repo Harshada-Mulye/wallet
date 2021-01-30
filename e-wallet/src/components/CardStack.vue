@@ -44,7 +44,7 @@ export default {
      formatNumber() {
       let formattedNum = ""
       if (this.card.number) {
-for (let i = 0; i < this.card.number.length; i++) {
+         for (let i = 0; i < this.card.number.length; i++) {
         if (i % 4 === 0) {
           formattedNum = formattedNum + " " + this.card.number[i]
         }

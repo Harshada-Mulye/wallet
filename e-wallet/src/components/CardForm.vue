@@ -68,7 +68,7 @@
             </div>
            
         
-            <select name="vendor" v-model="DefaultCard.vendor" @change="changeColor">
+            <select name="vendor" v-model="DefaultCard.vendor" @change="change">
             <option value="bitcoin">Bitcoin</option>
             <option value="ninja">Ninja</option>
             <option value="blockchain">Blockchain</option>
@@ -94,7 +94,7 @@ data()
   return{
     FormTitle: "add a new card",
      DefaultCard: {
-        id: "432984728397",
+        id: "45557",
         holder: "firstname lastname",
         vendor: "bitcoin",
         number: "XXXX XXXX XXXX XXXX",
@@ -107,7 +107,7 @@ data()
   }
 },
 methods:{
-changeColor(){
+change(){
   if (this.$refs.form.vendor.value == "bitcoin") {
         this.DefaultCard.bgColor = "#F9B449";
         this.DefaultCard.img="bitcoin";
