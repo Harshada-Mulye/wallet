@@ -113,7 +113,6 @@ export default {
       .add-card-btn {
         width: 100%;
         color: black;
-        text-decoration: none;
         font-weight: bold;
         padding: 10px 20px;
      

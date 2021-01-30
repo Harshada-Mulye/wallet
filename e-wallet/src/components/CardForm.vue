@@ -10,7 +10,7 @@
          
       <Card :card="DefaultCard"/>
         </section>
-        <section class="add-card-form">
+        <section class="add-card">
           <form class="submit-card" @submit.prevent="addForm" ref="form">
             <label for="cardNumber">Card Number</label>
             <the-mask  mask="#### #### #### ####"
@@ -161,9 +161,9 @@ addForm()
    main {
     max-width: 375px;
     margin: auto;
-    .add-card-form {
+    .add-card {
       form {
-        max-width: 352px;
+        max-width: 345px;
         margin: 50px auto 0 auto;
         display: flex;
         flex-direction: column;
