@@ -11,10 +11,10 @@ new Vue({
     return{
       cards: [
         {
-           "id": "432984728397",
+           "id": "1",
            "holder": "Harshada Mulye",
            "vendor": "bitcoin",
-           "number": "5300 8355 9300 7870",
+           "number": "1322 2325 2300 7120",
            "validMonth": "12",
            "validYear": "05",
            "bgColor": "#F9B449",
@@ -22,10 +22,10 @@ new Vue({
            "img": "bitcoin"
         },
         {
-           "id": "432984728397",
+           "id": "2",
            "holder": "Shraddha Mulye",
            "vendor": "evil",
-           "number": "5300 8355 8500 7870",
+           "number": "5311 1455 6570 2370",
            "validMonth": "12",
            "validYear": "05",
            "bgColor": "#DF2E4C",
@@ -33,10 +33,10 @@ new Vue({
            "img": "evil"
         },
         {
-           "id": "432984728397",
+           "id": "3",
            "holder": "Reva Abh",
            "vendor": "blockchain",
-           "number": "5300 8355 9900 7870",
+           "number": "2450 8315 1200 3870",
            "validMonth": "12",
            "validYear": "05",
            "bgColor": "#7E4EE1",
@@ -44,10 +44,10 @@ new Vue({
            "img": "blockchain"
         },
         {
-           "id": "432984728397",
+           "id": "4",
            "holder": "Ganesh Abh",
            "vendor": "ninja",
-           "number": "5300 8355 6900 7870",
+           "number": "7800 8775 6660 6370",
            "validMonth": "12",
            "validYear": "05",
            "bgColor": "#3A3A3A",

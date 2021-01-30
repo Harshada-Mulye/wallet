@@ -11,7 +11,7 @@
       <Card :card="DefaultCard"/>
         </section>
         <section class="add-card-form">
-          <form class="submit-card" @submit.prevent="send" ref="form">
+          <form class="submit-card" @submit.prevent="addForm" ref="form">
             <label for="cardNumber">Card Number</label>
             <the-mask  mask="#### #### #### ####"
             type="text"
@@ -94,7 +94,7 @@ data()
   return{
     FormTitle: "add a new card",
      DefaultCard: {
-        id: "45557",
+        id: "10",
         holder: "firstname lastname",
         vendor: "bitcoin",
         number: "XXXX XXXX XXXX XXXX",
@@ -130,7 +130,7 @@ change(){
       }
  
 },
-send()
+addForm()
 {
     if (
         this.$refs.form.cardNumber.value.length == 0 ||
