@@ -16,7 +16,6 @@
             <the-mask  mask="#### #### #### ####"
             type="text"
             name="cardNumber"
-            class="card-number"
             placeholder="XXXXXXXXXXXXXXXX"
             v-model="DefaultCard.number"
             />
@@ -24,7 +23,7 @@
           <input
             type="text"
             name="cardholderName"
-            class="cardholder-name"
+           
             placeholder="FULL NAME"
              v-model="DefaultCard.holder"
             />
@@ -32,7 +31,7 @@
            
               
               <div class="valid-month">
-                <label for="validMonth" class="valid-label">Month</label>
+                <label for="validMonth" >Month</label>
                 </div>
                 <div>
                   <select name="validMonth" v-model="DefaultCard.validMonth">
@@ -52,7 +51,7 @@
           </select>
           </div>
           <div class="validYear">
-           <label for="validMonth" class="valid-label">Year</label>
+           <label for="validYear" >Year</label>
            </div>
            <div>
            <select name="validYear" v-model="DefaultCard.validYear">
@@ -116,7 +115,7 @@ change(){
       if (this.$refs.form.vendor.value == "evil") {
         this.DefaultCard.bgColor = "#DF2E4C";
         this.DefaultCard.img="evil";
-        this.DefaultCard.textColor = "#ECE6DF";
+        this.DefaultCard.textColor = "#2c3e50";
       }
       if (this.$refs.form.vendor.value == "blockchain") {
         this.DefaultCard.bgColor = "#8050E5";
